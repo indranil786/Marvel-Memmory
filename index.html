@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marvel Memory</title>
+    <link
+      rel="icon"
+      href="https://img.icons8.com/officel/100/000000/captain-america.png"
+      sizes="16x16"
+      type="image/png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body onload="random()">
+    <div class="gameContainer">
+      <div class="container info">
+        <h3 class="text-center text-white display-6">
+          Know Your Marvel Memory
+        </h3>
+        <h4 class="yourtext text-center text-white">
+          Your Score is : <span class="value text-white"></span>
+        </h4>
+        <center>
+          <button
+            type="button"
+            class="btn btn-outline-light"
+            onclick="resetGame()"
+          >
+            Reset
+          </button>
+        </center>
+      </div>
+      <div class="card" data-image="captain" data-val="1">
+        <img
+          src="Images/amercia.png"
+          class="front flip"
+          alt="Captain America Img"
+        />
+        <img src="Images/captain-america.png" class="back" alt="lco" />
+      </div>
+      <div class="card" data-image="captain" data-val="2">
+        <img
+          src="Images/amercia.png"
+          class="front flip"
+          alt="Captain America Img"
+        />
+        <img src="Images/captain-america.png" class="back" alt="lco" />
+      </div>
+      <div class="card" data-image="groot" data-val="3">
+        <img src="Images/groot.png" class="front" alt="Groot Img" />
+        <img src="Images/captain-america.png" class="back" alt="lco" />
+      </div>
+      <div class="card" data-image="groot" data-val="4">
+        <img src="Images/groot.png" class="front" alt="Groot Img" />
+        <img src="Images/captain-america.png" class="back" alt="lco" />
+      </div>
+      <div class="card" data-image="deadpool" data-val="5">
+        <img src="Images/deadpool.png" class="front" alt="deadpool" />
+        <img src="Images/captain-america.png" class="back" alt="lco" />
+      </div>
+      <div class="card" data-image="deadpool" data-val="6">
+        <img src="Images/deadpool.png" class="front" alt="deadpool" />
+        <img src="Images/captain-america.png" class="back" alt="lco" />
+      </div>
+      <div class="card" data-image="magneto" data-val="7">
+        <img src="Images/magneto.png" class="front" alt="Magneto" />
+        <img src="Images/captain-america.png" class="back" alt="lco" />
+      </div>
+      <div class="card" data-image="magneto" data-val="8">
+        <img src="Images/magneto.png" class="front" alt="Magneto" />
+        <img src="Images/captain-america.png" class="back" alt="lco" />
+      </div>
+      <div class="card" data-image="spiderman" data-val="9">
+        <img src="Images/spiderman.png" class="front" alt="spiderman" />
+        <img src="Images/captain-america.png" class="back" alt="lco" />
+      </div>
+      <div class="card" data-image="spiderman" data-val="10">
+        <img src="Images/spiderman.png" class="front" alt="spiderman" />
+        <img src="Images/captain-america.png" class="back" alt="lco" />
+      </div>
+      <div class="card" data-image="thor" data-val="11">
+        <img src="Images/thor.png" class="front" alt="thor" />
+        <img src="Images/captain-america.png" class="back" alt="lco" />
+      </div>
+      <div class="card" data-image="thor" data-val="12">
+        <img src="Images/thor.png" class="front" alt="thor" />
+        <img src="Images/captain-america.png" class="back" alt="lco" />
+      </div>
+      <div class="card" data-image="wolverine" data-val="13">
+        <img src="Images/wolverine.png" class="front" alt="mindblownface" />
+        <img src="Images/captain-america.png" class="back" alt="lco" />
+      </div>
+      <div class="card" data-image="wolverine" data-val="14">
+        <img src="Images/wolverine.png" class="front" alt="mindblownface" />
+        <img src="Images/captain-america.png" class="back" alt="lco" />
+      </div>
+      <div class="card" data-image="thanos" data-val="15">
+        <img src="Images/thanos.png" class="front" alt="thanos" />
+        <img src="Images/captain-america.png" class="back" alt="lco" />
+      </div>
+      <div class="card" data-image="thanos" data-val="16">
+        <img src="Images/thanos.png" class="front" alt="thanos" />
+        <img src="Images/captain-america.png" class="back" alt="lco" />
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
