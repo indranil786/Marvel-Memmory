@@ -13,4 +13,4 @@ A simple JavaScript Memory Game, that tests your Memory !
 
 ## Game Snap
 
-![Screen shot of the Game](Images/Memmory\ Game.jpg)
+![Screen shot of the Game](Images/Memmory\Game.jpg)
