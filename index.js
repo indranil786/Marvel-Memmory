@@ -14,6 +14,7 @@ var firstCard,secondCard=null;
 var counter=0;
 yourScore(counter);
 function flip(e){
+    console.log(e)
     console.log(this)
     this.classList.add("flip")
     audioplay("flip.mp3");
@@ -31,7 +32,7 @@ function flip(e){
     
 
 }
-Array.from(cards).forEach((card)=>card.addEventListener("click",flip))
+Array.from(cards).forEach((card)=>{card.addEventListener("click",flip);})
 function sucess(){    
 firstCard.removeEventListener("click",flip)
 secondCard.removeEventListener("click",flip)
@@ -79,6 +80,7 @@ function resetGame(){
         if(item.classList.contains("flip"))
         item.classList.remove("flip")
     })
+    Array.from(cards).forEach((card)=>{card.addEventListener("click",flip);})
     reset();
     setTimeout(()=>{    
         random()
